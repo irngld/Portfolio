@@ -1,15 +1,12 @@
 <!doctype html>
 <html lang="en">
  <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-
     <title>Portfolio</title>
  </head>
   <body>
@@ -18,7 +15,7 @@
         <!-- Header -->
         <header id="header">
           <div class="fullName">
-              <span class="animate-slide-right"><img style="margin-bottom: 25px;" src="./Assets/info_icon(white).png" alt="" srcset=""></span>
+              <span class="animate-slide-right"><img src="./Assets/info_icon(white).png" alt="" srcset=""></span>
               <span class="animate-slide-right">a</i></span>
               <span class="animate-slide-right">i</i></span>
               <span class="animate-slide-right">n</i></span>
@@ -32,7 +29,9 @@
           <div id="career">
               <span class="animate-slide-up">Fullstack Web Developer</span>
           </div>
-          <a href="#main" class="arrow-dwn fas fa-arrow-down">Continue</a> <!-- button icon solid solo fa-arrow-down scrolly -->
+          <div class="btn-arrow-dwn">
+             <a href="#main" class="arrow-dwn"><i class="fas fa-arrow-down"></i></a>
+          </div>
         </header>
   
         <!-- Nav -->
@@ -44,10 +43,10 @@
           </ul>
           <ul class="icons">
             <li>
-              <a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
+              <a href="#" class="icon brands fab fa-github"><span class="label">GitHub</span></a>
             </li>
             <li>
-              <a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+              <a href="#" class="icon brands fas fa-linkedin-in"><span class="label">LinkedIn</span></a>
             </li>
           </ul>
         </nav>
@@ -55,20 +54,28 @@
         <!-- Main -->
         <div id="main">
           <!-- Post -->
-          <section class="post">
-            <header class="major">
-              <span class="date">April 25, 2017</span>
-              <h1>
-                Projects<br />
-              </h1>
-            </header>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-          </section>
+            <section class="row"> <!-- section -->
+                <header class="row">
+                    <span class="date">April 3, 2021</span>
+                    <h1>
+                        Projects<br />
+                    </h1>
+                </header>
+                <!-- <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
+                <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
+                <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
+                <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
+                <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
+                <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div> -->
+                <div class="row flex-wrap align-content-center "> <!-- flex-wrap justify-content-center -->
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                    <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+                </div>
+            </section> <!-- section END -->
         </div>
   
         <!-- Footer -->
@@ -131,14 +138,14 @@
             <li>Design: <a href=""></a></li>
           </ul>
         </div>
-      </div>
+    </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- needed for "velocity" transition (jquery) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.js"></script> <!-- needed for "velocity" transition (jquery) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.ui.js"></script> <!-- needed for "velocity" transition (jquery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.js"></script> <!-- needed for "velocity" transition (jquery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.ui.js"></script> <!-- needed for "velocity" transition (jquery) -->
     <script src="main.js"></script>
   </body>
 </html>
