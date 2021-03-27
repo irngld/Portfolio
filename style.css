@@ -24,11 +24,14 @@ body {
   /* align-items: space-around; */
 }
 
-.prjct-image img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
+.img-container {
+  /* display: flex;
+  align-content: center;
+  justify-content: center; */
+  text-align: center;
+}
+
+.prjct-image {
   height: 300px;
   width: 200px;
 }
@@ -260,6 +263,7 @@ label {
 }
 
 #nav ul.icons {
+  list-style-type: none;
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
