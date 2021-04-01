@@ -11,7 +11,7 @@
  </head>
   <body>
     <!-- Wrapper -->
-    <div id="container">
+    <div class="container"> <!-- container -->
         <!-- Header -->
         <header id="header">
           <div class="fullName">
@@ -37,9 +37,9 @@
         <!-- Nav -->
         <nav id="nav">
           <ul class="links">
-            <li class="active"><a class="lnk-projects" href="#">Projects</a></li>
-            <li><a class="lnk-technologies" href="#">Technologies</a></li>
-            <li><a class="lnk-about" href="#">About</a></li>
+            <li class="active"><a class="lnk-projects" href="#container-projects">Projects</a></li>
+            <li><a class="lnk-technologies" href="#container-technologies">Technologies</a></li>
+            <li><a class="lnk-about" href="#container-about">About</a></li>
           </ul>
           <ul class="icons">
             <li>
@@ -53,69 +53,117 @@
   
         <!-- Main -->
         <div id="main">
-          <div class="tabs" id="container-projects">
-
-            <section class="container">
-              <header class="row">
-                  <span class="date">April 3, 2021</span>
-                  <h1>
-                      Projects
-                  </h1>
-              </header>
-              <!-- <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
-              <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
-              <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
-              <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
-              <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div>
-              <div class="prjct-image col-4"><a class="" href="#main" target=""><img src="./Assets/project.jpg" alt="" /></a></div> -->
-              <div class="row flex-wrap align-content-center "> <!-- flex-wrap justify-content-center -->
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
-                  <a class="col-4" href="#main" target=""><img style="height: 300px; width: 200px;" src="./Assets/project.jpg" alt="" /></a>
+          
+          <div class="row">
+            <div class="col-1"></div> <!-- col padding -->
+            <div class="col-10">
+              
+              <div class="tabs" id="container-projects">
+                
+                <section class=""> 
+                  <header class="row">
+                      <span class="date">April 3, 2021</span>
+                      <h1>Projects</h1>
+                  </header>
+              
+                  <div class="row">
+                    <div class="col-4 img-container"><a href="https://codepen.io/irngld/pen/RwoobrP" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a>CSS Creature</div>
+                    <div class="col-4 img-container"><a href="https://irngld.github.io/static-layout/" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a>Static Layout</div>
+                    <div class="col-4 img-container"><a href="https://irngld.github.io/API_Space/" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a>API-1 (Space)</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4 img-container"><a href="https://ig-apitwo.web.app/" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a>API-2 (Serving Size)</div>
+                    <div class="col-4 img-container"><a href="#main" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                    <div class="col-4 img-container"><a href="#main" target="_blank"><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                  </div>
+                </section>
               </div>
+
+              <div class="tabs hidden" id="container-technologies">
+                <section class="row"> 
+                    <header class="row">
+                      <h1>Technologies</h1>  
+                    </header>
+
+                    <div class="row">
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                      <div class="col-4 img-container"><a href="#main" target=""><img class="prjct-image" src="./Assets/project.jpg" alt="" /></a></div>
+                    </div>
+
+                </section> 
+              </div>
+
+              <div class="tabs hidden" id="container-about">
+                <section class="row">
+                    <header class="row">
+                      <h1>About</h1>
+                    </header>
+                </section> 
+              </div>
+
+            </div>
+            <div class="col-1"></div>
+          </div>
+
+      </div> <!-- Main END-->
+
+      <div id="footer" class="row">
+        <section class="col">
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
+            </ul>
+          </form>
+        </section>
+        <section class="row split contact">
+          <section class="col-3 alt">
+            <h3>Address</h3>
+            <p>
+              1234 Somewhere Road #87257<br />
+              Indianapolis, IN 00000-0000
+            </p>
           </section>
-        </div>
-
-
-           <div class="tabs hidden" id="container-technologies">
-          
-            <section class="row"> 
-                <header class="row">
-                  <h1>
-                    Technologies tab
-                </h1>  
-                  <span class="date">April 3, 2021</span>
-                    
-                </header>
-                
-            </section> 
-        </div>
-
-
-
-
-        <div class="tabs hidden" id="container-about">
-          
-            <section class="row">
-                <header class="row">
-                  <h1>
-                    About tab
-                </h1>  
-                  <span class="date">April 3, 2021</span>
-                    
-                </header>
-                
-            </section> 
-        </div>
-
-
-
+          <section>
+            <h3>Phone</h3>
+            <p><a href="#">(000) 000-0000</a></p>
+          </section>
+          <section>
+            <h3>Email</h3>
+            <p><a href="#">info@untitled.tld</a></p>
+          </section>
+          <section class="col-3">
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+              </li>
+              <li>
+                <a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+              </li>
+            </ul>
+          </section>
+        </section>
       </div>
-
-
           
         <!-- Footer -->
         <!-- <footer id="footer">
@@ -170,14 +218,15 @@
           </section>
         </footer> -->
   
-<!--      
+     
         <div id="copyright">
           <ul>
             <li>&copy; Untitled</li>
             <li>Design: <a href=""></a></li>
           </ul>
-        </div> -->
-    </div>
+        </div>
+
+    </div> <!-- container END -->
 
 
 
