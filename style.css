@@ -2,7 +2,7 @@
 
 body {
   background: linear-gradient(black 0%, 35%, #4a6da7 95%);
-  height: 100vh;
+  height: 100%; /* 100vh */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
