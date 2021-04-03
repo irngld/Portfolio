@@ -9,6 +9,10 @@ body {
   background-size: cover;
 }
 
+#main {
+  padding-top: 64px;
+}
+
 #header {
   display: flex;
   flex-direction: column;
@@ -19,18 +23,8 @@ body {
 
 .tabs {
   height: 80vh;
+  background: lightgray;
 }
-
-/* #footer {
-  *display: flex;
-  *flex-direction: column;
-  *justify-content: space-evenly;
-  background-color: white;
-  text-align: center;
-  color: white;
-  height: 100%;
-  margin: 0;
-} */
 
 .btn-arrow-dwn {
   display: flex;
@@ -52,6 +46,26 @@ body {
   background-color: transparent;
 }
 
+#btn-contact {
+  background-color: #4a6da7;
+  margin: 10px 0;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  /* border-radius: 10px; */
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+  margin-top: 50px;
+  height: 45vh;
+}
+
+#contact label {
+  margin: 0.75rem 0 0.5rem 0;
+}
+
 .img-container,
 .img-container a {
   display: flex;
@@ -60,12 +74,10 @@ body {
   text-align: center;
 }
 
-/* #container-technologies > section > div:nth-child(2) > div:nth-child(1) */
-
 .tech-img-container i {
   font-size: 15vw;
   text-align: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 0 2rem;
 }
 
@@ -116,7 +128,7 @@ label {
   display: none;
 }
 
-/* Icon */
+/* Icons : github, linkedin */
 .icon {
   text-decoration: none;
   font-size: 1.5rem;
@@ -324,9 +336,8 @@ ul.icons li {
   overflow: hidden;
   background: #262626;
   color: #627482 !important;
-  /* margin-top: 250px;
-  margin-bottom: 0; */
-  margin: 250px 0 0 0;
+  /* margin-top: 250px; */
+  margin: 150px 0 0 0;
   padding-bottom: 0;
 }
 
@@ -334,8 +345,11 @@ small {
   font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
-.bold-text {
-  color: #989c9e !important;
+.bold-text a,
+.list-unstyled a {
+  /* color: #989c9e !important; */
+  color: #627482 !important;
+  text-decoration: none !important;
 }
 
 .mt-55 {
@@ -355,7 +369,7 @@ h3 {
 }
 /* FOOTER end */
 
-/* Alison */
+/* Experimental/Test Overlay */
 .imageOverlay {
   position: relative;
   width: 100%;
